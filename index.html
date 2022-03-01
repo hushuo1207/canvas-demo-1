@@ -10,7 +10,11 @@
 </head>
 <body>
   <canvas id="canvas" width="100" height="100"></canvas>
-
+  <div class="title">
+    简易画板
+    <br>
+    请开始作画
+  </div>
   <script>
     let canvas = document.getElementById("canvas")
     canvas.width = document.documentElement.clientWidth;
@@ -59,7 +63,6 @@
       ctx.moveTo(x1, y1);
       ctx.lineTo(x2, y2);
       ctx.stroke();
-
     }
   </script>
 </body>

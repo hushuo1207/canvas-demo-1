@@ -1,12 +1,27 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 #canvas {
-    display: block;
-    /*height: 99vh;*/
-    /*width: 99vw;*/
-    /*border: 1px solid red;*/
-
+  display: block;
+  z-index: 1;
+  position: absolute;
+  /*height: 99vh;*/
+  /*width: 99vw;*/
+  /* border: 1px solid red; */
+}
+body {
+  position: relative;
+}
+.title {
+  position: absolute;
+  /* border: 1px solid red; */
+  z-index: 0;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #666;
+  width: 100px;
+  text-align: center;
 }
